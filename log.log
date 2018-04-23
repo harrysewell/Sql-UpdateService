@@ -1,0 +1,142 @@
+2018-04-20 15:26:20,879 INFO Successfully Connected to database:!!!TEST!!!
+2018-04-20 15:29:48,449 INFO Successfully Connected to database:!!!TEST!!!
+2018-04-20 15:30:35,692 INFO Successfully Connected to database:!!!TEST!!!
+2018-04-20 15:31:19,637 INFO Successfully Connected to database:!!!TEST!!!
+2018-04-20 15:32:21,787 INFO Successfully Connected to database:!!!TEST!!!
+2018-04-20 15:32:48,840 INFO Successfully Connected to database:!!!TEST!!!
+2018-04-20 15:33:12,345 INFO Successfully Connected to database:!!!TEST!!!
+2018-04-20 15:34:10,127 INFO Successfully Connected to database:!!!TEST!!!
+2018-04-20 15:39:54,910 INFO Successfully Connected to database:!!!TEST!!!
+2018-04-20 15:40:16,764 INFO Successfully Connected to database:!!!TEST!!!
+2018-04-20 15:40:56,618 INFO Successfully Connected to database:!!!TEST!!!
+2018-04-20 15:41:20,879 INFO Successfully Connected to database:!!!TEST!!!
+2018-04-20 15:41:39,463 INFO Successfully Connected to database:!!!TEST!!!
+2018-04-20 15:41:57,980 INFO Successfully Connected to database:!!!TEST!!!
+2018-04-20 15:42:21,212 INFO Successfully Connected to database:!!!TEST!!!
+2018-04-20 15:42:42,705 INFO Successfully Connected to database:!!!TEST!!!
+2018-04-20 15:43:00,652 INFO Successfully Connected to database:!!!TEST!!!
+2018-04-20 15:49:23,860 INFO Successfully Connected to database:!!!TEST!!!
+2018-04-20 15:49:27,057 INFO POSTING an update to ProductCode "00044" with the EIDR ID "SKURT        345"
+2018-04-20 15:49:28,061 ERROR Housenumber: 00044 Failed to update with EIDR code:"SKURT        345"
+2018-04-20 15:49:28,062 ERROR details of the Exception:
+Traceback (most recent call last):
+  File "C:\Users\harrsewe\PycharmProjects\Test_BSS_fetch\venv\lib\site-packages\urllib3\connection.py", line 141, in _new_conn
+    (self.host, self.port), self.timeout, **extra_kw)
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\harrsewe\PycharmProjects\Test_BSS_fetch\venv\lib\site-packages\urllib3\connectionpool.py", line 601, in urlopen
+    chunked=chunked)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x034A9B50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\harrsewe\PycharmProjects\Test_BSS_fetch\venv\lib\site-packages\requests\adapters.py", line 440, in send
+    timeout=timeout
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='mtgsrv054', port=6626): Max retries exceeded with url: /EIDR/updateEIDR/00044 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x034A9B50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "NewFetch.py", line 123, in EidrPost
+    requests.post(WonEIDRendPoint+houseNumber, data=EidrUpdate, headers=headers)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='mtgsrv054', port=6626): Max retries exceeded with url: /EIDR/updateEIDR/00044 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x034A9B50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it',))
+2018-04-20 15:50:54,151 INFO Successfully Connected to database:!!!TEST!!!
+2018-04-20 15:50:57,501 INFO POSTING an update to ProductCode "00044" with the EIDR ID "SKURT        345"
+2018-04-20 15:50:58,506 ERROR Housenumber: 00044 Failed to update with EIDR code:"SKURT        345"
+2018-04-20 15:50:58,507 ERROR details of the Exception:
+Traceback (most recent call last):
+  File "C:\Users\harrsewe\PycharmProjects\Test_BSS_fetch\venv\lib\site-packages\urllib3\connection.py", line 141, in _new_conn
+    (self.host, self.port), self.timeout, **extra_kw)
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\harrsewe\PycharmProjects\Test_BSS_fetch\venv\lib\site-packages\urllib3\connectionpool.py", line 601, in urlopen
+    chunked=chunked)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x034AAB50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\harrsewe\PycharmProjects\Test_BSS_fetch\venv\lib\site-packages\requests\adapters.py", line 440, in send
+    timeout=timeout
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='mtgsrv054', port=6626): Max retries exceeded with url: /EIDR/updateEIDR/00044 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x034AAB50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "NewFetch.py", line 123, in EidrPost
+    requests.post(WonEIDRendPoint+houseNumber, data=EidrUpdate, headers=headers)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='mtgsrv054', port=6626): Max retries exceeded with url: /EIDR/updateEIDR/00044 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x034AAB50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it',))
+2018-04-20 15:51:22,715 INFO Successfully Connected to database:!!!TEST!!!
+2018-04-20 15:51:26,046 INFO POSTING an update to ProductCode "00044" with the EIDR ID "SKURT        345"
+2018-04-20 15:51:27,068 ERROR Housenumber: 00044 Failed to update with EIDR code:"SKURT        345"
+2018-04-20 15:51:27,069 ERROR details of the Exception:
+Traceback (most recent call last):
+  File "C:\Users\harrsewe\PycharmProjects\Test_BSS_fetch\venv\lib\site-packages\urllib3\connection.py", line 141, in _new_conn
+    (self.host, self.port), self.timeout, **extra_kw)
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\harrsewe\PycharmProjects\Test_BSS_fetch\venv\lib\site-packages\urllib3\connectionpool.py", line 601, in urlopen
+    chunked=chunked)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x034EAB70>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\harrsewe\PycharmProjects\Test_BSS_fetch\venv\lib\site-packages\requests\adapters.py", line 440, in send
+    timeout=timeout
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='mtgsrv054', port=6626): Max retries exceeded with url: /EIDR/updateEIDR/00044 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x034EAB70>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "NewFetch.py", line 123, in EidrPost
+    requests.post(WonEIDRendPoint+houseNumber, data=EidrUpdate, headers=headers)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='mtgsrv054', port=6626): Max retries exceeded with url: /EIDR/updateEIDR/00044 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x034EAB70>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it',))
+2018-04-20 15:52:05,245 INFO Successfully Connected to database:!!!TEST!!!
+2018-04-20 15:52:08,257 INFO POSTING an update to ProductCode "00044" with the EIDR ID "SKURT        345"
+2018-04-20 15:52:09,266 ERROR Housenumber: 00044 Failed to update with EIDR code:"SKURT        345"
+2018-04-20 15:52:09,266 ERROR details of the Exception:
+Traceback (most recent call last):
+  File "C:\Users\harrsewe\PycharmProjects\Test_BSS_fetch\venv\lib\site-packages\urllib3\connection.py", line 141, in _new_conn
+    (self.host, self.port), self.timeout, **extra_kw)
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\harrsewe\PycharmProjects\Test_BSS_fetch\venv\lib\site-packages\urllib3\connectionpool.py", line 601, in urlopen
+    chunked=chunked)
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x034AAB50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\harrsewe\PycharmProjects\Test_BSS_fetch\venv\lib\site-packages\requests\adapters.py", line 440, in send
+    timeout=timeout
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='mtgsrv054', port=6626): Max retries exceeded with url: /EIDR/updateEIDR/00044 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x034AAB50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "NewFetch.py", line 123, in EidrPost
+    requests.post(WonEIDRendPoint+houseNumber, data=EidrUpdate, headers=headers)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='mtgsrv054', port=6626): Max retries exceeded with url: /EIDR/updateEIDR/00044 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x034AAB50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it',))
+2018-04-20 16:04:23,036 INFO Successfully Connected to database:!!!TEST!!!
+2018-04-20 16:07:10,286 INFO Successfully Connected to database:!!!TEST!!!
+2018-04-20 16:07:32,403 INFO Successfully Connected to database:!!!TEST!!!
+2018-04-20 16:08:08,145 INFO Successfully Connected to database:!!!TEST!!!
+2018-04-20 16:41:06,850 INFO Successfully Connected to database:!!!TEST!!!
+2018-04-20 16:41:09,938 INFO POSTING an update to ProductCode "10000209" with the EIDR ID "FRIENDS WITH BENEFITS 16:9 DD HD"
+2018-04-20 16:41:10,381 INFO Housenumber10000209 Updated successfully
+2018-04-20 17:23:10,371 INFO Successfully Connected to database:!!!TEST!!!
+2018-04-20 17:23:13,830 INFO Query returned Null - No records changed in the last hour
